@@ -24,19 +24,20 @@ module.exports = {
           "style-loader",
           // Translates CSS into CommonJS
           "css-loader",
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [
-                  [
-                    "tailwindcss",
-                    "autoprefixer",
-                  ],
-                ],
-              },
-            },
-          },
+          "postcss-loader",
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     postcssOptions: {
+          //       plugins: [
+          //         [
+          //           "tailwindcss",
+          //           "autoprefixer",
+          //         ],
+          //       ],
+          //     },
+          //   },
+          // },
           // Compiles Sass to CSS
           "sass-loader",
         ],
