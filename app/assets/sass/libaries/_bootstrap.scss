@@ -1,8 +1,32 @@
 .carousel {
+  @apply relative;
+
   & .carousel-inner {
+    @apply relative overflow-hidden w-full;
+
     & .carousel-item {
+      @apply relative hidden float-left w-full -mr-full;
+      backface-visibility: hidden;
+      transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+
       &.active {
         display: block !important;
+
+        &.carousel-item-left {
+          @apply transform -translate-x-full;
+        }
+
+        &.carousel-item-right {
+          @apply transform translate-x-full;
+        }
+      }
+
+      .carousel-item-next:not(.carousel-item-right) {
+        @apply transform -translate-x-full;
+      }
+
+      .carousel-item-next:not(.carousel-item-left) {
+        @apply transform translate-x-full;
       }
     }
   }
