@@ -1,0 +1,10 @@
+html {
+  font-size: 16px;
+}
+
+button {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
