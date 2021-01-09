@@ -86,11 +86,26 @@
     </header>
     <main>
       <div class="w-full">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-ride="carousel"
-        >
+        <div id="tixCarousel" class="carousel slide" data-ride="carousel">
+          <ol
+            class="carousel-indicators absolute bottom-3/25 left-1/2 transform -translate-x-1/2 z-10 flex"
+          >
+            <li
+              data-target="#tixCarousel"
+              data-slide-to="0"
+              class="w-4 h-4 rounded-full bg-white mx-2 cursor-pointer active"
+            ></li>
+            <li
+              data-target="#tixCarousel"
+              data-slide-to="1"
+              class="w-4 h-4 rounded-full bg-white mx-2 cursor-pointer"
+            ></li>
+            <li
+              data-target="#tixCarousel"
+              data-slide-to="2"
+              class="w-4 h-4 rounded-full bg-white mx-2 cursor-pointer"
+            ></li>
+          </ol>
           <div class="carousel-inner clear-both">
             <div class="carousel-item active">
               <img
@@ -116,7 +131,7 @@
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleControls"
+            href="#tixCarousel"
             role="button"
             data-slide="prev"
           >
@@ -125,7 +140,7 @@
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleControls"
+            href="#tixCarousel"
             role="button"
             data-slide="next"
           >

@@ -8,6 +8,9 @@ module.exports = {
       },
       spacing: {
         'full': '100%',
+      },
+      inset: {
+        '3/25': '12%'
       }
     },
   },
