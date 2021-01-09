@@ -1,9 +1,5 @@
 .carousel {
-  @apply relative;
-
   & .carousel-inner {
-    @apply relative overflow-hidden w-full;
-
     & .carousel-item {
       @apply relative hidden float-left w-full -mr-full transition-all duration-1000;
       backface-visibility: hidden;
