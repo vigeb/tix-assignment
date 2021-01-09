@@ -4,8 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'primary': 'black'
-        
+        'primary': 'black'   
+      },
+      spacing: {
+        'full': '100%',
       }
     },
   },
