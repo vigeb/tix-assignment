@@ -25,6 +25,9 @@ module.exports = {
         '225': '56.25rem',
         '235': '58.75rem',
       },
+      minWidth: {
+        '40': '10rem',
+      },
       zIndex: {
         'full': '999999'
       }
