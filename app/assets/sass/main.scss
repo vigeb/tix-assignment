@@ -5,14 +5,4 @@
 @import "./abstracts/variables";
 @import "./base/base";
 @import "./libaries/bootstrap";
-
-// .dropdown-menu.show {
-//   display: block !important;
-// }
-
-#list {
-  padding: 8px 12px;
-  color: #9b9b9b;
-  border: none;
-  cursor: pointer;
-}
+@import "./libaries/owl-carousel";

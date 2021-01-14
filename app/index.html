@@ -9,6 +9,10 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    /> -->
     <title>Tix assignment</title>
   </head>
   <body>
@@ -93,7 +97,7 @@
       </div>
     </header>
     <main>
-      <section id="slide">
+      <section id="slide" class="mb-16">
         <div class="w-full">
           <div class="w-full relative mt-20">
             <div class="w-full pb-10/25">
@@ -253,10 +257,10 @@
                     <div class="flex">
                       <div class="w-1/3">
                         <div class="w-full px-4">
-                          <div class="dropdown w-full relative">
+                          <div class="dropdown js-ticket w-full relative">
                             <div
-                              id="film"
-                              class="flex items-center justify-between text-gray-900 py-2 cursor-pointer"
+                              id="movie"
+                              class="js-dropdown-btn flex items-center justify-between text-gray-900 py-2 cursor-pointer"
                               data-toggle="dropdown"
                               aria-haspopup="true"
                               aria-expanded="false"
@@ -269,26 +273,26 @@
                             </div>
                             <div
                               class="dropdown-menu absolute left-0 -ml-4 hidden"
-                              aria-labelledby="film"
+                              aria-labelledby="movie"
                             >
                               <div class="min-w-40 max-w-2xl">
                                 <div
                                   class="w-full rounded-lg bg-white shadow-2xl overflow-x-hidden overflow-y-auto break-words py-2 border border-gray-200 max-h-64"
                                 >
                                   <ul class="h-full">
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
-                                        >this is the first film, this title of
-                                        film must be longer</a
+                                        >this is the first movie, this title of
+                                        movie must be longer</a
                                       >
                                     </li>
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
-                                        >this is the first film, this title of
+                                        >this is the first movie, this title of
                                         film must be longer</a
                                       >
                                     </li>
@@ -301,10 +305,10 @@
                       </div>
                       <div class="w-1/6">
                         <div class="w-full px-4">
-                          <div class="dropdown w-full relative">
+                          <div class="dropdown js-ticket w-full relative">
                             <div
                               id="rap"
-                              class="flex items-center justify-between text-gray-900 py-2 cursor-pointer"
+                              class="js-dropdown-btn flex items-center justify-between text-gray-900 py-2 cursor-pointer"
                               data-toggle="dropdown"
                               aria-haspopup="true"
                               aria-expanded="false"
@@ -324,7 +328,7 @@
                                   class="w-full rounded-lg bg-white shadow-2xl overflow-x-hidden overflow-y-auto break-words py-2 border border-gray-200 max-h-64"
                                 >
                                   <ul class="h-full">
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
@@ -332,7 +336,7 @@
                                         film must be longer</a
                                       >
                                     </li>
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
@@ -349,10 +353,10 @@
                       </div>
                       <div class="w-1/6">
                         <div class="w-full px-4">
-                          <div class="dropdown w-full relative">
+                          <div class="dropdown js-ticket w-full relative">
                             <div
                               id="date"
-                              class="flex items-center justify-between text-gray-900 py-2 cursor-pointer"
+                              class="js-dropdown-btn flex items-center justify-between text-gray-900 py-2 cursor-pointer"
                               data-toggle="dropdown"
                               aria-haspopup="true"
                               aria-expanded="false"
@@ -372,7 +376,7 @@
                                   class="w-full rounded-lg bg-white shadow-2xl overflow-x-hidden overflow-y-auto break-words py-2 border border-gray-200 max-h-64"
                                 >
                                   <ul class="h-full">
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
@@ -380,7 +384,7 @@
                                         film must be longer</a
                                       >
                                     </li>
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
@@ -397,10 +401,10 @@
                       </div>
                       <div class="w-1/6">
                         <div class="w-full px-4">
-                          <div class="dropdown w-full relative">
+                          <div class="dropdown js-ticket w-full relative">
                             <div
                               id="time"
-                              class="flex items-center justify-between text-gray-900 py-2 cursor-pointer"
+                              class="js-dropdown-btn flex items-center justify-between text-gray-900 py-2 cursor-pointer"
                               data-toggle="dropdown"
                               aria-haspopup="true"
                               aria-expanded="false"
@@ -420,7 +424,7 @@
                                   class="w-full rounded-lg bg-white shadow-2xl overflow-x-hidden overflow-y-auto break-words py-2 border border-gray-200 max-h-64"
                                 >
                                   <ul class="h-full">
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
@@ -428,7 +432,7 @@
                                         film must be longer</a
                                       >
                                     </li>
-                                    <li class="w-full">
+                                    <li class="js-ticket-item w-full">
                                       <a
                                         href="#"
                                         class="w-full px-4 py-2 truncate inline-block hover:bg-blue-300 hover:text-white"
@@ -626,223 +630,12 @@
         </div>
       </section>
       <!-- news -->
-      <section class="news">
-        <div class="news__container w-2/4 m-auto">
-          <a href="#" id="dienAnh">Điện ảnh 24h</a>
-          <a href="#" id="review">Review</a>
-          <a href="#" id="khuyenMai">Khuyến Mãi</a>
-          <div class="row-1 flex">
-            <div class="news-big w-1/2 p-2">
-              <img
-                src="./assets/images/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056938333773.jpg"
-                alt="img"
-                class="mb-2"
-              />
-              <h1 class="font-bold">
-                “Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành
-              </h1>
-              <p class="text-sm">
-                Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo
-                độc-lạ-chill nhất từ trước đến giờ sẽ chính thức khai trương tại
-                360 Giải Phóng!
-              </p>
-              <div class="likes inline-block pr-2">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/like.png"
-                  alt="likes"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  1
-                </p>
-              </div>
-              <div class="comments inline-block">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/comment.png"
-                  alt="cmts"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  0
-                </p>
-              </div>
-            </div>
-            <div class="news-big w-1/2 p-2">
-              <img
-                src="./assets/images/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043752411629.png"
-                alt="img"
-                class="mb-2"
-              />
-              <h1 class="font-bold">
-                Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau 2 tuần công
-                chiếu
-              </h1>
-              <p class="text-sm">
-                Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu lạc bộ
-                phim điện ảnh đạt 100 tỷ đồng doanh thu phòng vé. Dàn ngôi sao
-                “bạc tỷ” của phim cũng lần đầu tiên hội tụ đầy đủ trong một
-                khung hình để ăn mừng thành tích ấn tượng
-              </p>
-              <div class="likes inline-block">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/like.png"
-                  alt="likes"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  2
-                </p>
-              </div>
-              <div class="comments inline-block">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/comment.png"
-                  alt="cmts"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  0
-                </p>
-              </div>
-            </div>
-            <div class="news-big"></div>
-          </div>
-          <div class="row-2 flex">
-            <div class="news-small h-10 w-1/3 p-2">
-              <img
-                src="./assets/images/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056938333773.jpg"
-                alt="img"
-                class="mb-2"
-              />
-              <h1 class="font-bold">
-                “Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành
-              </h1>
-              <p class="text-sm">
-                Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo
-                độc-lạ-chill nhất từ trước đến giờ sẽ chính thức khai trương tại
-                360 Giải Phóng!
-              </p>
-              <div class="likes inline-block pr-2">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/like.png"
-                  alt="likes"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  1
-                </p>
-              </div>
-              <div class="comments inline-block">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/comment.png"
-                  alt="cmts"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  0
-                </p>
-              </div>
-            </div>
-            <div class="news-small h-10 w-1/3 p-2">
-              <img
-                src="./assets/images/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043752411629.png"
-                alt="img"
-                class="mb-2"
-              />
-              <h1 class="font-bold">
-                Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau 2 tuần côn...
-              </h1>
-              <p class="text-sm">
-                Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu lạc bộ
-                phim điện ảnh đạt 100 tỷ đồng doanh thu phòng vé. Dàn ngôi sao
-                “bạc tỷ” ...
-              </p>
-              <div class="likes inline-block">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/like.png"
-                  alt="likes"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  2
-                </p>
-              </div>
-              <div class="comments inline-block">
-                <img
-                  class="inline-block w-5"
-                  src="./assets/images/comment.png"
-                  alt="cmts"
-                />
-                <p
-                  class="num text-base inline-block text-gray-400 font-semibold p-2"
-                >
-                  0
-                </p>
-              </div>
-            </div>
-            <div
-              class="news-small h-10 w-1/3 p-2 flex flex-col justify-between"
-            >
-              <div class="flex">
-                <img
-                  src="./assets/images/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png"
-                  alt="img"
-                  class="inline-block w-12 h-12 rounded-md pr-2"
-                />
-                <a
-                  href="#"
-                  class="inline-block text-sm font-medium text-blue-300 hover:text-red-400 transition duration-500"
-                  >Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng...</a
-                >
-              </div>
-              <div class="flex">
-                <img
-                  src="./assets/images/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png"
-                  alt="img"
-                  class="inline-block w-12 h-12 rounded-md pr-2"
-                />
-                <a
-                  href="#"
-                  class="inline-block text-sm font-medium text-blue-300 hover:text-red-400 transition duration-500"
-                  >Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng...</a
-                >
-              </div>
-              <div class="flex">
-                <img
-                  src="./assets/images/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png"
-                  alt="img"
-                  class="inline-block w-12 h-12 rounded-md pr-2"
-                />
-                <a
-                  href="#"
-                  class="inline-block text-sm font-medium text-blue-300 hover:text-red-400 transition duration-500"
-                  >Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng...</a
-                >
-              </div>
-              <div class="flex">
-                <img
-                  src="./assets/images/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png"
-                  alt="img"
-                  class="inline-block w-12 h-12 rounded-md pr-2"
-                />
-                <a
-                  href="#"
-                  class="inline-block text-sm font-medium text-blue-300 hover:text-red-400 transition duration-500"
-                  >Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng...</a
-                >
+      <section id="movies">
+        <div class="w-full">
+          <div class="w-235 mx-auto">
+            <div class="w-full">
+              <div class="owl-carousel w-full overflow-hidden">
+                <div class="w-full">.</div>
               </div>
             </div>
           </div>
@@ -859,6 +652,23 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: true,
+          dragClass: "test demo",
+          navText: [
+            '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+            '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+          ],
+        });
+        // $(".owl-carousel").on("changed.owl.carousel", function (event) {
+        //   console.log(event);
+        // });
+      });
+    </script>
     <script src="./bundled.js"></script>
   </body>
 </html>
