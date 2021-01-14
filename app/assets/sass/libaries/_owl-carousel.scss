@@ -1,0 +1,11 @@
+.owl-carousel {
+  & .owl-stage-outer {
+    & .owl-stage {
+      @apply whitespace-nowrap;
+
+      & .owl-item {
+        @apply inline-block;
+      }
+    }
+  }
+}
