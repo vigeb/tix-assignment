@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "./utilities/ellipsis";
+
 @import "./abstracts/variables";
 @import "./base/base";
 @import "./libaries/bootstrap";
