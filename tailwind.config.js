@@ -16,6 +16,7 @@ module.exports = {
         'full': '100%',
         '10/25': '40%',
         'yt': '56.25%',
+        'tix-v': 'calc((318%/215)*100)',
       },
       inset: {
         '3/25': '12%'
@@ -26,7 +27,12 @@ module.exports = {
         '235': '58.75rem',
       },
       minWidth: {
+        '8': '2rem',
         '40': '10rem',
+      },
+      fontSize: {
+        '2xs': '0.5rem',
+        '3xs': '0.25rem',
       },
       zIndex: {
         'full': '999999'
@@ -36,7 +42,7 @@ module.exports = {
   variants: {
     extend: {
       display: ['hover', 'focus', 'active', 'group-hover'],
-      // visibility: ['hover', 'focus', 'active', 'group-hover'],
+      backgroundImage: ['hover', 'focus']
     },
   },
   plugins: [],
