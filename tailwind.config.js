@@ -42,8 +42,10 @@ module.exports = {
   variants: {
     extend: {
       display: ['hover', 'focus', 'active', 'group-hover'],
-      backgroundImage: ['hover', 'focus']
+      backgroundImage: ['hover', 'focus'],
+      visibility: ['hover', 'focus', 'group-hover']
     },
+    fontSize: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
 }

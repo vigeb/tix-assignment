@@ -1,5 +1,7 @@
 .owl-carousel {
   & .owl-stage-outer {
+    @apply w-full overflow-hidden;
+
     & .owl-stage {
       @apply whitespace-nowrap;
 

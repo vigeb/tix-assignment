@@ -53,3 +53,18 @@
     }
   }
 }
+
+.tab {
+  &.tab-movie .tab-item {
+    &.active {
+      @apply text-2xl text-red-500;
+    }
+  }
+}
+
+.tab-content {
+  & .show.active {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
