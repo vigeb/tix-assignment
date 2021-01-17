@@ -12,6 +12,9 @@ module.exports = {
       backgroundColor: {
         'primary': 'black'   
       },
+      backgroundImage: {
+        'backapp': "url('https://tix.vn/app/assets/img/icons/backapp.jpg')"
+      },
       spacing: {
         'full': '100%',
         '10/25': '40%',
@@ -43,9 +46,11 @@ module.exports = {
     extend: {
       display: ['hover', 'focus', 'active', 'group-hover'],
       backgroundImage: ['hover', 'focus'],
-      visibility: ['hover', 'focus', 'group-hover']
+      visibility: ['hover', 'focus', 'group-hover'],
+      scale: ['responsive', 'active', 'focus', 'hover', 'group-hover'],
+      fontSize: ['responsive', 'hover', 'focus'],
+      borderWidth: ['responsive', 'hover', 'focus', 'active'],
     },
-    fontSize: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
 }

@@ -60,11 +60,21 @@
       @apply text-2xl text-red-500;
     }
   }
+
+  &.tab-news .tab-item {
+    &.active {
+      @apply text-2xl text-red-500;
+    }
+  }
 }
 
 .tab-content {
-  & .show.active {
-    display: block !important;
-    opacity: 1 !important;
+  .tab-pane {
+    &.fade.show {
+      opacity: 1 !important;
+    }
+    &.active {
+      display: block !important;
+    }
   }
 }
