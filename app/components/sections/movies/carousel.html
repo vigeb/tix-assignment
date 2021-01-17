@@ -1,96 +1,57 @@
-<section id="movies">
+<section id="movies" class="mt-20">
   <div class="w-full">
     <div class="w-235 mx-auto">
-      <div class="w-full">
-        <div class="owl-carousel w-full overflow-hidden">
-          <div class="w-full">
-            <div class="flex flex-wrap">
-              <div class="px-3 w-1/4 mb-4">
-                <div class="w-full">
-                  <div class="w-full relative group">
-                    <div class="w-full">
-                      <a href="#">
-                        <div class="w-full relative pb-tix-v">
-                          <div class="absolute top-0 left-0 right-0 bottom-0">
-                            <div class="w-full h-full rounded overflow-hidden">
-                              <div class="w-full h-full">
-                                <img
-                                  src="https://s3img.vcdn.vn/mobile/123phim/2020/12/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png"
-                                  alt=""
-                                  class="w-full h-full object-cover"
-                                />
-                              </div>
-                              <div
-                                class="absolute top-0 right-0 mt-2 mr-2 z-20"
-                              >
-                                <div
-                                  class="px-2 pb-1 rounded border border-gray-900 bg-gray-900 bg-opacity-80"
-                                >
-                                  <p class="text-center text-white">6.9</p>
-                                  <p class="text-center text-red-500 text-2xs">
-                                    <i
-                                      class="fa fa-star"
-                                      aria-hidden="true"
-                                    ></i>
-                                    <i
-                                      class="fa fa-star"
-                                      aria-hidden="true"
-                                    ></i>
-                                    <i
-                                      class="fa fa-star"
-                                      aria-hidden="true"
-                                    ></i>
-                                    1/2
-                                  </p>
-                                </div>
-                              </div>
-                              <div
-                                class="absolute top-0 left-0 w-full h-full rounded overflow-hidden"
-                              >
-                                <div
-                                  class="w-full h-full bg-gradient-to-t from-black via-gray-700 to-transparent bg-opacity-50 opacity-75"
-                                ></div>
-                                <button
-                                  type="button"
-                                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-12 w-12 rounded-full border border-white text-white bg-gray-500 bg-opacity-10 hover:bg-opacity-25 hover:bg-gray-900 hover:text-gray-200 hover:border-gray-200"
-                                  data-toggle="modal"
-                                  data-target="#modalMovieOne"
-                                >
-                                  <i class="fa fa-play" aria-hidden="true"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <div class="w-full mt-2">
-                        <a href="#">
-                          <div class="w-full relative h-12 overflow-hidden">
-                            <div class="w-full ellipsis-2">
-                              <span
-                                class="min-w-8 px-1 rounded mr-2 text-white bg-red-500 uppercase"
-                                >C13</span
-                              >
-                              <h2 class="inline font-medium text-base">
-                                Nữ thần chiến binh 1984 - Wonder woman 1984
-                                (C13)
-                              </h2>
-                            </div>
-                            <div class="absolute w-full top-0 left-0">
-                              <a
-                                href="#"
-                                class="w-full px-4 py-2 block rounded bg-gradient-to-r from-red-700 via-red-600 to-red-600 hover:bg-gradient-to-l text-white uppercase text-center text-lg"
-                                >Mua vé</a
-                              >
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <nav class="w-full relative h-12 mb-2">
+        <div
+          class="nav nav-tabs tab tab-movie absolute inline-block top-0 left-1/2 transform -translate-x-1/2"
+          id="nav-tab"
+          role="tablist"
+        >
+          <a
+            class="nav-item nav-link tab-item active mx-4 font-semibold inline-block transition-all duration-150 text-xl hover:text-2xl"
+            id="dang-chieu-tab"
+            data-toggle="tab"
+            href="#dang-chieu"
+            role="tab"
+            aria-controls="dang-chieu"
+            aria-selected="true"
+            >Đang chiếu</a
+          >
+          <a
+            class="nav-item nav-link tab-item mx-4 font-semibold inline-block transition-all duration-150 text-xl hover:text-2xl"
+            id="sap-chieu-tab"
+            data-toggle="tab"
+            href="#sap-chieu"
+            role="tab"
+            aria-controls="sap-chieu"
+            aria-selected="false"
+            >Profile</a
+          >
+        </div>
+      </nav>
+      <div class="w-full tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade hidden show active opacity-0 transition-all duration-75 w-full"
+          id="dang-chieu"
+          role="tabpanel"
+          aria-labelledby="dang-chieu-tab"
+        >
+          <div class="owl-carousel py-6 w-full relative">
+            <div include-html="sections/movies/carousel-item.html"></div>
+            <div include-html="sections/movies/carousel-item.html"></div>
+            <div include-html="sections/movies/carousel-item.html"></div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade hidden opacity-0 transition-all duration-75 w-full"
+          id="sap-chieu"
+          role="tabpanel"
+          aria-labelledby="sap-chieu-tab"
+        >
+          <div class="owl-carousel py-6 w-full relative">
+            <div include-html="sections/movies/carousel-item.html"></div>
+            <div include-html="sections/movies/carousel-item.html"></div>
+            <div include-html="sections/movies/carousel-item.html"></div>
           </div>
         </div>
       </div>

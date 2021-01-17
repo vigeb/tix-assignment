@@ -53,3 +53,28 @@
     }
   }
 }
+
+.tab {
+  &.tab-movie .tab-item {
+    &.active {
+      @apply text-2xl text-red-500;
+    }
+  }
+
+  &.tab-news .tab-item {
+    &.active {
+      @apply text-2xl text-red-500;
+    }
+  }
+}
+
+.tab-content {
+  .tab-pane {
+    &.fade.show {
+      opacity: 1 !important;
+    }
+    &.active {
+      display: block !important;
+    }
+  }
+}
