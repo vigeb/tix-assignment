@@ -1,9 +1,9 @@
-<section id="movies" class="mt-20">
+<section id="movies" class="mt-4 lg:mt-20">
   <div class="w-full">
-    <div class="w-235 mx-auto">
+    <div class="w-full lg:w-235 mx-auto">
       <nav class="w-full relative h-12 mb-2">
         <div
-          class="nav nav-tabs tab tab-movie absolute inline-block top-0 left-1/2 transform -translate-x-1/2"
+          class="nav nav-tabs tab tab-movie absolute inline-block whitespace-nowrap overflow-x-auto top-0 left-1/2 transform -translate-x-1/2"
           id="nav-tab"
           role="tablist"
         >
@@ -25,7 +25,7 @@
             role="tab"
             aria-controls="sap-chieu"
             aria-selected="false"
-            >Profile</a
+            >Sắp chiếu</a
           >
         </div>
       </nav>
@@ -37,9 +37,15 @@
           aria-labelledby="dang-chieu-tab"
         >
           <div class="owl-carousel py-6 w-full relative">
-            <div include-html="sections/movies/carousel-item.html"></div>
-            <div include-html="sections/movies/carousel-item.html"></div>
-            <div include-html="sections/movies/carousel-item.html"></div>
+            <div class="w-full">
+              <div include-html="sections/movies/carousel-item.html"></div>
+            </div>
+            <div class="hidden lg:block w-full">
+              <div include-html="sections/movies/carousel-item.html"></div>
+            </div>
+            <div class="hidden lg:block w-full">
+              <div include-html="sections/movies/carousel-item.html"></div>
+            </div>
           </div>
         </div>
         <div
@@ -49,9 +55,15 @@
           aria-labelledby="sap-chieu-tab"
         >
           <div class="owl-carousel py-6 w-full relative">
-            <div include-html="sections/movies/carousel-item.html"></div>
-            <div include-html="sections/movies/carousel-item.html"></div>
-            <div include-html="sections/movies/carousel-item.html"></div>
+            <div class="w-full">
+              <div include-html="sections/movies/carousel-item.html"></div>
+            </div>
+            <div class="hidden lg:block w-full">
+              <div include-html="sections/movies/carousel-item.html"></div>
+            </div>
+            <div class="hidden lg:block w-full">
+              <div include-html="sections/movies/carousel-item.html"></div>
+            </div>
           </div>
         </div>
       </div>
