@@ -17,3 +17,11 @@ $ cd tix-assignment
 ```
 
 ### Bước 3: Contact me.
+
+## Dành cho mentor chấm bài
+
+Khỏi nói nhiều, vui lòng tự clone và chạy command để kiểm tra
+
+```
+$ npm run dev
+```
